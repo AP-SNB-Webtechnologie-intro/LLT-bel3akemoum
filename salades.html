@@ -1,104 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <title>Kitchen Royal</title>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Cooking website">
-        <meta name="keywords" content="Food, cooking">
-        <meta name="author" content="AP-student">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <style>
-            body {background-color:rgb(243, 224, 142);}
-            body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-        </style>
-         <style>
-            div.absolute {
-            position: absolute;
-            left: 30px;
-            top: 150px;
-        } 
-            </style>
-    </head>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kitchen Royal - Salade Recepten">
+    <meta name="keywords" content="Food, Cooking, Salads, Recepten">
+    <meta name="author" content="AP-student">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salade Recepten - Kitchen Royal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+<body class="salades">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><h1>Kitchen Royal</h1></a>
-                  <img src="Foto's/crown-png.png" alt="" width="100" height="100" alt="">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><h1>Kitchen Royal</h1></a>
+                <img src="Foto's/crown-png.png" alt="Logo" width="100" height="100">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="overzicht.html">Recepten</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="overzicht.html">Recepten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
                     <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                  </div>
                 </div>
-              </nav>
-        <style>
-           header {width: 100%;}
-           header {height: 100px;}
-           header {background-color:white;}
-           header {text-align: center;}
-           header {position: relative;}
-           header {position: fixed;}
-           header {top: 0;}
-           header {overflow: hidden;}
-           header {@include transition(all .5s ease);}
-           header {box-sizing: border-box;}
-           header {padding: 0;}
-           header {margin: 0;}
-           header {text-decoration: none;}
-           header {list-style: none;}
-           header {box-sizing: border-box;}
-            </style>
-
-        </header>
-
-        <nav>
+            </div>
         </nav>
+    </header>
 
-        <main>
-            <div class="absolute"
-             class="main-title-author os-container">
-                <div class="single-title ">
-                <h1>Pastasalade met tonijn</h1>
-                </div>
-                <img src="Foto's/salade.png" alt="" width="800" height="500"></a>
-                
-                <p>Als de zon schijnt, is er niets beters dan een heerlijk, frisse salade voor de lunch of lichte avondmaal! Dit is een makkelijk recept van pasta, tonijn gecombineerd met een fris/romig sausje. Heerlijk!</p>
-                <p>2 porties.</p>
-                <h2>Ingredienten</h2>
-                <ol>
-                    <li>100 g pasta</li>
-                    <li>Halve avocado</li>
-                    <li>1 tomaat</li>
-                    <li>1 rode ui</li>
-                    <li>1 augurk</li>
-                    <li>50 g zarte olijven</li>
-                    <li>50 g roomkaas</li>
-                    <li>1 blik tonijn in olie</li>
-                    <li>Olijfolie en kruiden</li>
-                </ol>
-                    <h2>Stappenplan</h2>
-                    <p>Breng ruim water aan de kook. Als het begint te borrelen, voeg je het zout toe en eventueel een scheutje olie. Voeg de pasta toe. Na een paar minuten roer je het los van elkaar. Kook het voor zo’n 8 tot 10 minuten. Giet de pasta af in een vergiet en laat het water uitlekken. Spoel na met koud water.</p>
-                    <p>Doe de roomkaas samen met de mayonaise, olijfolie, mosterd, azijn, zout en zwarte peper (naar smaak) in een diepe kom. Meng alles samen tot een gladde massa</p>
-                    <p>Ontvel de tomaat en rode ui. Snijd de tomaat, rode ui, augurk en zwarte olijven klein. Snijd de avocado in de lengte door twee en leg de andere helft weg (dek het wel goed af met huishoudfolie en laat de pit erin). Verwijder de schil en snijd het in stukken</p>
-                    <img src="Foto's/salade1.png" alt="" width="600" height="500"></a>
-                    <img src="Foto's/salade2.png" alt="" width="600" height="600"></a>
+    <main>
+        <div class="main-title-author">
+            <h1>Salade Recepten</h1>
+            <p>Bekijk hieronder een lekkere salade voor je maaltijd!</p>
+            <p>Refresh de pagina voor steeds een nieuwe recept!</p>
+        </div>
+
+        <div id="recipe-section" class="container recipe">
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Dina</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

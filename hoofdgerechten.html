@@ -1,104 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <title>Kitchen Royal</title>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Cooking website">
-        <meta name="keywords" content="Food, cooking">
-        <meta name="author" content="AP-student">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <style>
-            body {background-color:rgb(178, 216, 132);}
-            body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-        </style>
-         <style>
-            div.absolute {
-            position: absolute;
-            left: 30px;
-            top: 150px;
-        } 
-            </style>
-    </head>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kitchen Royal - Hoofdgerechten Recepten">
+    <meta name="keywords" content="Food, Cooking, Main Course, Dinner, Recipes">
+    <meta name="author" content="AP-student">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoofdgerechten - Kitchen Royal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+<body class="hoofdgerechten">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><h1>Kitchen Royal</h1></a>
-                  <img src="Foto's/crown-png.png" alt="" width="100" height="100" alt="">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><h1>Kitchen Royal</h1></a>
+                <img src="Foto's/crown-png.png" alt="Logo" width="100" height="100">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="overzicht.html">Recepten</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="overzicht.html">Recepten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
                     <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                  </div>
                 </div>
-              </nav>
-        <style>
-           header {width: 100%;}
-           header {height: 100px;}
-           header {background-color:white;}
-           header {text-align: center;}
-           header {position: relative;}
-           header {position: fixed;}
-           header {top: 0;}
-           header {overflow: hidden;}
-           header {@include transition(all .5s ease);}
-           header {box-sizing: border-box;}
-           header {padding: 0;}
-           header {margin: 0;}
-           header {text-decoration: none;}
-           header {list-style: none;}
-           header {box-sizing: border-box;}
-            </style>
-
-        </header>
-
-        <nav>
+            </div>
         </nav>
+    </header>
 
-        <main>
-            <div class="absolute"
-             class="main-title-author os-container">
-                <div class="single-title ">
-                <h1>Broodjes met kip uit de oven</h1>
-                </div>
-                <img src="Foto's/hoofdgerecht.png" alt="" width="800" height="500"></a>
-                
-                <p>Zin in een heerlijke doordeweekse maaltijd? Probeer deze makkelijke en simpele gevulde casinobroodjes met kip en groenten! Ze zijn snel te bereiden, smaakvol en worden perfect goudbruin in de oven!</p>
-                <h2>Ingredienten</h2>
-                <ol>
-                    <li>Casinobroodjes</li>
-                    <li>450 g kippendijen</li>
-                    <li>Kipkruiden</li>
-                    <li>150 g gele ui</li>
-                    <li>75 g rode paprika en 75 g groene paprika</li>
-                    <li>50 g olijven</li>
-                    <li>80 g kaas</li>
-                    <li>Mayonaise</li>
-                    <li>Tomaatjes als topping</li>
-                </ol>
-                    <h2>Stappenplan</h2>
-                    <p>Was de kippendijen en snijd ze in stukken. Verhit olijfolie in een koekenpan op middelhoog vuur. Voeg de kip, cayennepeper, komijnpoeder, knoflookpoeder, paprikapoeder en Italiaanse kruiden toe, en verkruimel het kippenbouillonblokje boven de pan. Meng goed en bak gedurende 3-4 minuten</p>
-                    <p>Voeg de gele ui, rode paprika, groene paprika en groene olijven toe. Bak nog eens 4-5 minuten. Voeg als laatste de kaas toe en meng goed.</p>
-                    <img src="Foto's/hoofdgerecht1.png" alt="" width="800" height="700"></a>
-                    <p>Verdeel de casinobroodjes over een bakplaat met bakpapier. Smeer er een laagje mayonaise over en verdeel het kipmengsel erover. Leg er een plakje cheddar kaas op, gevolgd door de saus. Bedek met de casinobroodjes</p>
-                    <p>Top de broodjes af met geraspte kaas en plakjes tomaat. Plaats de gevulde casinobroodjes met kip in een voorverwarmde oven op 200 °C. Bak ze gedurende 10 minuten, of totdat de broodjes mooi goudbruin zijn gekleurd</p>
-                    <img src="Foto's/hoofdgerecht2.png" alt="" width="600" height="700"></a>
+    <main>
+        <div class="main-title-author">
+            <h1>Hoofdgerechten</h1>
+            <p>Bekijk hieronder een heerlijk hoofdgerecht recept!</p>
+            <p>Refresh de pagina voor steeds een nieuwe recept!</p>
+        </div>
+
+        <div id="recipe-section" class="container recipe">
+</div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Dina</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

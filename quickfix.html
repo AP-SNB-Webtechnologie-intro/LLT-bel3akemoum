@@ -1,106 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <title>Kitchen Royal</title>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Cooking website">
-        <meta name="keywords" content="Food, cooking">
-        <meta name="author" content="AP-student">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <style>
-            body {background-color:rgb(250, 143, 143);}
-            body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-        </style>
-         <style>
-            div.absolute {
-            position: absolute;
-            left: 30px;
-            top: 150px;
-        } 
-            </style>
-    </head>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kitchen Royal - Snelle en Makkelijke Recepten">
+    <meta name="keywords" content="Food, Cooking, Quick Recipes, Easy Recipes">
+    <meta name="author" content="AP-student">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snelle en Makkelijke Recepten</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+<body class="quickfix">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><h1>Kitchen Royal</h1></a>
-                  <img src="Foto's/crown-png.png" alt="" width="100" height="100" alt="">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><h1>Kitchen Royal</h1></a>
+                <img src="Foto's/crown-png.png" alt="Logo" width="100" height="100">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="overzicht.html">Recepten</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="overzicht.html">Recepten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
                     <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                  </div>
                 </div>
-              </nav>
-        <style>
-           header {width: 100%;}
-           header {height: 100px;}
-           header {background-color:white;}
-           header {text-align: center;}
-           header {position: relative;}
-           header {position: fixed;}
-           header {top: 0;}
-           header {overflow: hidden;}
-           header {@include transition(all .5s ease);}
-           header {box-sizing: border-box;}
-           header {padding: 0;}
-           header {margin: 0;}
-           header {text-decoration: none;}
-           header {list-style: none;}
-           header {box-sizing: border-box;}
-            </style>
-
-        </header>
-
-        <nav>
+            </div>
         </nav>
+    </header>
 
-        <main>
-            <div class="absolute"
-             class="main-title-author os-container">
-                <div class="single-title ">
-                <h1>Wok met groentes en garnalen</h1>
-                </div>
-                <img src="Foto's/quickfix.png" alt="" width="800" height="500"></a>
-                
-                <p>Snel een recept nodig voor het avondeten vandaag? Dan heb ik hier een heerlijke wok van groentes en garnalen die je moet uitproberen. Dit is een makkelijke maaltijd van noedels waar iedereen aan tafel van zal smullen!</p>
-                <h2>Ingredienten</h2>
-                <ol>
-                    <li>Een pakje woknoedels</li>
-                    <li>200 g broccoli</li>
-                    <li>1 rode ui en 1 teentje knoflook</li>
-                    <li>200 g champignons</li>
-                    <li>viskruiden</li>
-                    <li>50 g tomatensaus</li>
-                    <li>80 g kaas</li>
-                    <li>300 g garnalen</li>
-                    <li>Ketjap manis en rijstazijn</li>
-                </ol>
-                    <h2>Stappenplan</h2>
-                    <p>Breng ruim water aan de kook tot het borrelt. Haal de pan van het vuur en voeg de noedels toe. Doe er een deksel op en laat de pan staan voor een paar minuten of tot de noedels zacht zijn. Giet het water af.</p>
-                    <img src="Foto's/quickfix1.png" alt="" width="800" height="500"></a>
-                    <p>Stoom de broccoli voor een paar minuten en snijd het klein.</p>
-                    <p>Snijd de champignons en ui klein. Rasp de knoflook.</p>
-                    <img src="Foto's/quickfix2.png" alt="" width="800" height="700"></a>
-                    <p>Voeg de broccoli, viskruiden, pul biber, zwarte peper, knoflookpoeder en garnalen toe. Bak alle ingrediënten samen voor zo’n 2 minuten. Voeg de tomatensaus, rijstazijn toe, roer samen voor 2 minuten. Voeg de noodles toe en roerbak het mee voor een paar minuten.</p>
-                    Voeg de broccoli, viskruiden, pul biber, zwarte peper, knoflookpoeder en garnalen toe. Bak alle ingrediënten samen voor zo’n 2 minuten. Voeg de tomatensaus, rijstazijn en oestersaus toe, roer samen voor 2 minuten. Voeg de noodles toe en roerbak het mee voor een paar minuten.
-                    <img src="Foto's/quickfix3.png" alt="" width="800" height="500"></a>
+    <main>
+        <div class="main-title-author">
+            <h1>Snelle en Makkelijke Recepten</h1>
+            <p>Bekijk hieronder een geweldig snel en makkelijk recept!</p>
+            <p>Refresh de pagina voor steeds een nieuwe recept!</p>
+        </div>
+
+        <div id="recipe-section" class="container recipe">
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Dina</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

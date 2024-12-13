@@ -1,109 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <title>Kitchen Royal</title>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Cooking website">
-        <meta name="keywords" content="Food, cooking">
-        <meta name="author" content="AP-student">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <style>
-            body {background-color:rgb(195, 136, 91);}
-            body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-        </style>
-         <style>
-            div.absolute {
-            position: absolute;
-            left: 30px;
-            top: 150px;
-        } 
-            </style>
-    </head>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kitchen Royal - Dessert Recepten">
+    <meta name="keywords" content="Food, Cooking, Desserts, Recepten">
+    <meta name="author" content="AP-student">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Recepten - Kitchen Royal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+<body class="dessert"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><h1>Kitchen Royal</h1></a>
-                  <img src="Foto's/crown-png.png" alt="" width="100" height="100" alt="">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><h1>Kitchen Royal</h1></a>
+                <img src="Foto's/crown-png.png" alt="Logo" width="100" height="100">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="overzicht.html">Recepten</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="overzicht.html">Recepten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
                     <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                  </div>
                 </div>
-              </nav>
-        <style>
-           header {width: 100%;}
-           header {height: 100px;}
-           header {background-color:white;}
-           header {text-align: center;}
-           header {position: relative;}
-           header {position: fixed;}
-           header {top: 0;}
-           header {overflow: hidden;}
-           header {@include transition(all .5s ease);}
-           header {box-sizing: border-box;}
-           header {padding: 0;}
-           header {margin: 0;}
-           header {text-decoration: none;}
-           header {list-style: none;}
-           header {box-sizing: border-box;}
-            </style>
-
-        </header>
-
-        <nav>
+            </div>
         </nav>
+    </header>
 
-        <main>
-            <div class="absolute"
-             class="main-title-author os-container">
-                <div class="single-title ">
-                <h1>Tiramisu zonder ei</h1>
-                </div>
-                <img src="Foto's/dessert.png" alt="" width="800" height="500"></a>
-                
-                <p>Een heerlijk toetje zonder ei, tiramisu! Het is een heerlijkheid op tafel en wanneer je dol bent op makkelijk en no bake dan is dit echt iets voor jou. Om het nog smaakvoller te maken heb ik een heerlijk koffie/chocolade saus gecreëerd om het een ietwat excentrieke smaak te geven. Het is heerlijk intens, zacht, romig en heeft een overvloed aan smaak.</p>
-                <h2>Ingredienten</h2>
-                <ol>
-                    <li>250 g lange vingers</li>
-                    <li>250 ml koffie verkeerd</li>
-                    <li>300 ml ongeklopte slagroom</li>
-                    <li>350 g mascarpone</li>
-                    <li>Zakje vanillesuiker</li>
-                    <li>Zakje klopfix</li>
-                    <li>25 g kristalsuiker</li>
-                    <li>Cacaopoeder</li>
-                    <li>100 g pure chocolade</li>
-                </ol>
-                    <h2>Stappenplan</h2>
-                    <p>Klop de mascarpone samen met de ongeklopte slagroom, klopfix, vanillesuiker en suiker stijf.</p>
-                    <img src="Foto's/dessert1.png" alt="" width="700" height="700"></a>
-                    <p>Giet heet water in een glas en voeg de koffie toe. Met een lepel roer je het goed samen. Zeef de koffie boven de steelpan en voeg de ongeklopte slagroom, cacao en basterdsuiker toe, breng tot tegen de kook aan. Haal van het vuur en voeg de chocolade toe. Laat dit 1 minuut staan. Roer alles tot een gladde massa.</p>
-                    <img src="Foto's/dessert2.png" alt="" width="800" height="600"></a>
-                    <p>Doop de lange vingers één voor één in de koffie verkeerd.</p>
-                    <p>Verdeel het netjes over de schaal. Smeer de chocolade saus over de lange vingers en schep er een laag room op.</p>
-                    <img src="Foto's/dessert3.png" alt="" width="700" height="600"></a>
-                    <p>Herhaal de werkwijze.</p>
-                    <p>Bestuif de cacaopoeder op de tiramisu.</p>
-                    <p>Dek het af en leg het voor een nachtje in de koelkast om op te stijven.</p>
-                    <img src="Foto's/dessert4.png" alt="" width="600" height="400"></a>
+    <main>
+        <div class="main-title-author">
+            <h1>Dessert Recepten</h1>
+            <p>Bekijk hieronder een heerlijk dessertrecept!</p>
+            <p>Refresh de pagina voor steeds een nieuwe recept!</p>
+        </div>
+
+        <div id="recipe-section" class="container recipe">
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Dina</p>
+    </footer>
+    <script src="recipes.js"></script>
+</body>
+</html>

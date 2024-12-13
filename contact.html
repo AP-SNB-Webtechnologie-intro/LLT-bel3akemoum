@@ -1,188 +1,91 @@
 <!DOCTYPE html>
-<html>
-    <title>Kitchen Royal</title>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Cooking website">
-        <meta name="keywords" content="Food, cooking">
-        <meta name="author" content="AP-student">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <style>
-            body {background-color:rgb(198, 244, 222)}
-            body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-        </style>
-         <style>
-            div.absolute {
-            position: absolute;
-            left: 30px;
-            top: 150px;
-        } 
-            </style>
-
-            contactformulier
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <style>
-            body {font-family: verdana, Helvetica, sans-serif;}
-            * {box-sizing: border-box;}
-            
-            input[type=text], select, textarea {
-              width: 100%;
-              padding: 12px;
-              border: 1px solid #ccc;
-              border-radius: 4px;
-              box-sizing: border-box;
-              margin-top: 6px;
-              margin-bottom: 16px;
-              resize: vertical;
-            }
-            
-            input[type=submit] {
-              background-color: #04AA6D;
-              color: white;
-              padding: 12px 20px;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-            }
-            
-            input[type=submit]:hover {
-              background-color: #45a049;
-            }
-            
-            .container {
-              border-radius: 5px;
-              background-color: #f2f2f2;
-              padding: 20px;
-            }
-            </style>
-    </head>
-
-    <body>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-              <div class="container-fluid">
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact pagina van Kitchen Royal">
+    <meta name="keywords" content="Contact, Formulier, Antwerpen">
+    <meta name="author" content="Didi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kitchen Royal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="script.js"></script>
+</head>
+<body class="contact">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#"><h1>Kitchen Royal</h1></a>
-                <img src="Foto's/crown-png.png" alt="" width="100" height="100" alt="">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <img src="Foto's/crown-png.png" alt="Kroonlogo" width="50" height="50">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="overzicht.html">Recepten</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="overzicht.html">Recepten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form id="searchForm" class="d-flex">
+                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Zoek</button>
+                    </form>
                 </div>
-              </div>
-            </nav>
-        <style>
-           header {width: 100%;}
-           header {height: 100px;}
-           header {background-color:white;}
-           header {text-align: center;}
-           header {position: relative;}
-           header {position: fixed;}
-           header {top: 0;}
-           header {overflow: hidden;}
-           header {@include transition(all .5s ease);}
-           header {box-sizing: border-box;}
-           header {padding: 0;}
-           header {margin: 0;}
-           header {text-decoration: none;}
-           header {list-style: none;}
-           header {box-sizing: border-box;}
-            </style>
-
-        </header>
-
-        <nav>
+            </div>
         </nav>
+    </header>
 
-        <main>
-            <div class="absolute"
-            <section>
-                <h2><strong>Contact</strong></h2>
+    <main>
+        <section class="container my-5">
+            <h2><strong>Contacteer ons</strong></h2>
+            <p>Heb je vragen of opmerkingen? Vul dan onderstaand formulier in!</p>
 
-
-            </section>
-            <br><br>
-
-            <h3>Formulier naar Kitchen Royal</h3>
-
-<div class="container">
-  <form action="/action_page.php">
-    <label for="voornaam">Voornaam</label>
-    <input type="text" id="fname" name="voornaam" placeholder="Je naam..">
-
-    <label for="achtername">Achternaam</label>
-    <input type="text" id="achternaam" name="achternaam" placeholder="Je achternaam..">
-
-    <label for="land">Land</label>
-    <select id="land" name="land">
-      <option value="Belgie">Belgie</option>
-      <option value="Nederland">Nederland</option>
-    </select>
-
-    <label for="Onderwerp">Onderwerp</label>
-    <textarea id="onderwerp" name="onderwerp" placeholder="Typ iets.." style="height:200px"></textarea>
-
-    <input type="Verzend" value="Verzend">
-  </form>
-</div>
-<br><br>
-
-<h3>Formulier naar de webdesigner</h3>
-
-<div class="container">
-  <form action="/action_page.php">
-    <label for="voornaam">Voornaam</label>
-    <input type="text" id="fname" name="voornaam" placeholder="Je naam..">
-
-    <label for="achtername">Achternaam</label>
-    <input type="text" id="achternaam" name="achternaam" placeholder="Je achternaam..">
-
-    <label for="land">Land</label>
-    <select id="land" name="land">
-      <option value="Belgie">Belgie</option>
-      <option value="Nederland">Nederland</option>
-    </select>
-
-    <label for="Onderwerp">Onderwerp</label>
-    <textarea id="onderwerp" name="onderwerp" placeholder="Typ iets.." style="height:200px"></textarea>
-
-    <input type="Verzend" value="Verzend">
-  </form>
-</div>
-<br><br>
-
-<div class="container">
-  <h3>Locatie</h3>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159792.51319028935!2d4.192965491852057!3d51.26036460447229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f68ebfc3887d%3A0x3eaf448482a88ab8!2sAntwerpen!5e0!3m2!1snl!2sbe!4v1704907933709!5m2!1snl!2sbe" 
-  width="1250" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-</div>
-
-        </main>
-        <aside>
+         
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Naam</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mailadres</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Bericht</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Verstuur</button>
+            </form>
             
-        </aside>
-        <footer>
-            
+            <h2 class="my-5">Locatie: Antwerpen</h2>
+            <div id="map" style="height: 400px;"></div>
+        </section>
+    </main>
 
-        </footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Dina</p>
+    </footer>
 
-    </body>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        
+        var map = L.map('map').setView([51.2194, 4.4025], 13); 
+
+      
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([51.2194, 4.4025]).addTo(map)
+            .bindPopup('<b>Antwerpen</b><br>Fijn dat je ons hebt gevonden!')
+            .openPopup();
+    </script>
+</body>
 </html>
